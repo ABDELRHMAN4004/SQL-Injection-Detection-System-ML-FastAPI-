@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+
+scikit-learn
+numpy
+pandas
+
+requests
+joblib
+
+python-multipart

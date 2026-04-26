@@ -12,13 +12,19 @@ app = FastAPI(title="SQL Injection Detection API")
 
 logging.basicConfig(level=logging.INFO)
 
-
+# ==============================
+# Load model once
+# ==============================
 model, vectorizer = load_model()
 
+# ==============================
+# Paths (IMPORTANT for Render)
+# ==============================
+BASE_DIR = os.path.dirname(__file__)
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ATTACKS_FILE = os.path.join(BASE_DIR, "real_attacks.json")
 ANALYSIS_FILE = os.path.join(BASE_DIR, "analysis_attacks.json")
+
 
 # ==============================
 # Root
@@ -52,16 +58,13 @@ def predict(req: QueryRequest):
 
 
 # ==============================
-# Get all attacks (RAW output)
+# Get all attacks (RAW)
 # ==============================
 @app.get("/attacks")
 def get_attacks():
     try:
         if not os.path.exists(ATTACKS_FILE):
-            return {
-                "count": 0,
-                "attacks": []
-            }
+            return {"count": 0, "attacks": []}
 
         with open(ATTACKS_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -76,7 +79,7 @@ def get_attacks():
 
 
 # ==============================
-# Get attack by ID (RAW output)
+# Get attack by ID
 # ==============================
 @app.get("/attacks/{attack_id}")
 def get_attack_by_id(attack_id: str):
@@ -88,7 +91,7 @@ def get_attack_by_id(attack_id: str):
             data = json.load(f)
 
         for attack in data:
-            if str(attack["id"]) == str(attack_id):
+            if str(attack.get("id")) == str(attack_id):
                 return attack
 
         raise HTTPException(status_code=404, detail="Not found")
@@ -98,7 +101,7 @@ def get_attack_by_id(attack_id: str):
 
 
 # ==============================
-# Export (RAW)
+# Export RAW attacks
 # ==============================
 @app.get("/export/attacks")
 def export_attacks():
@@ -111,12 +114,11 @@ def export_attacks():
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
-   
-
-ANALYSIS_FILE = os.path.join(BASE_DIR, "analysis_attacks.json")
 
 
+# ==============================
+# ANALYSIS ENDPOINT
+# ==============================
 @app.get("/analysis")
 def analysis():
     try:
@@ -138,14 +140,14 @@ def analysis():
 
         total = len(data)
 
-        normal = sum(1 for x in data if x["type"] == "normal")
-        attack = sum(1 for x in data if x["type"] == "attack")
+        normal = sum(1 for x in data if x.get("type") == "normal")
+        attack = sum(1 for x in data if x.get("type") == "attack")
 
         y_true = []
         y_pred = []
 
         for item in data:
-            if item.get("true_label") is not None:
+            if item.get("true_label") is not None and item.get("prediction") is not None:
                 y_true.append(item["true_label"])
                 y_pred.append(item["prediction"])
 
@@ -167,4 +169,4 @@ def analysis():
         }
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))    
+        raise HTTPException(status_code=500, detail=str(e))

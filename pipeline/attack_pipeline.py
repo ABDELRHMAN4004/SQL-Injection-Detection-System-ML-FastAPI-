@@ -1,8 +1,20 @@
 import requests
 import json
+import os
 
 ATTACK_API = "https://strike-defender-v1.runasp.net/api/Attacks/generate_Atttacks_Static_Prompt"
 MODEL_API = "http://127.0.0.1:8000/predict"
+
+# ==============================
+# FIX: write INSIDE app folder
+# ==============================
+BASE_DIR = os.path.join(os.path.dirname(__file__), "..", "app")
+BASE_DIR = os.path.abspath(BASE_DIR)
+
+REAL_ATTACKS_FILE = os.path.join(BASE_DIR, "real_attacks.json")
+NORMAL_ATTACKS_FILE = os.path.join(BASE_DIR, "normal_attacks.json")
+ANALYSIS_FILE = os.path.join(BASE_DIR, "analysis_attacks.json")
+
 
 # ==============================
 # Fetch attacks
@@ -43,37 +55,24 @@ for item in data:
             json={"query": payload}
         )
 
-        if res.status_code == 200:
-            result = res.json()
-            prediction = result.get("prediction")
-        else:
-            prediction = None
+        prediction = res.json().get("prediction") if res.status_code == 200 else None
 
     except Exception:
         prediction = None
 
-    # ==============================
-    # RAW: attacks / normal
-    # ==============================
     record = {
         "id": attack_id,
         "payload": payload
     }
 
-    # ==============================
-    # Analysis record
-    # ==============================
     analysis_record = {
         "id": attack_id,
         "payload": payload,
         "prediction": prediction,
-        "true_label": prediction,  # مؤقت (until labeled dataset)
+        "true_label": prediction,  # unchanged as requested
         "type": "attack" if prediction == 1 else "normal"
     }
 
-    # ==============================
-    # Split
-    # ==============================
     if prediction == 1:
         real_attacks.append(record)
     elif prediction == 0:
@@ -84,21 +83,15 @@ for item in data:
     print(f"[{attack_id}] -> {prediction}")
 
 # ==============================
-# Save RAW ATTACKS
+# SAVE FILES (NOW SAME FOLDER AS API)
 # ==============================
-with open("real_attacks.json", "w", encoding="utf-8") as f:
+with open(REAL_ATTACKS_FILE, "w", encoding="utf-8") as f:
     json.dump(real_attacks, f, indent=4, ensure_ascii=False)
 
-# ==============================
-# Save RAW NORMAL
-# ==============================
-with open("normal_attacks.json", "w", encoding="utf-8") as f:
+with open(NORMAL_ATTACKS_FILE, "w", encoding="utf-8") as f:
     json.dump(normal_attacks, f, indent=4, ensure_ascii=False)
 
-# ==============================
-# Save ANALYSIS (FULL DATASET)
-# ==============================
-with open("analysis_attacks.json", "w", encoding="utf-8") as f:
+with open(ANALYSIS_FILE, "w", encoding="utf-8") as f:
     json.dump(analysis_attacks, f, indent=4, ensure_ascii=False)
 
-print("\nSaved all files ")
+print("\nSaved all files")

@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO)
 model, vectorizer = load_model()
 
 # ==============================
-# Paths (IMPORTANT for Render)
+# Paths (FIXED)
 # ==============================
 BASE_DIR = os.path.dirname(__file__)
 

